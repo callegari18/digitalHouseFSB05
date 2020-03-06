@@ -1,0 +1,154 @@
+/* Fonte - Família de letras --> */
+@font-face {
+    font-family: 'Bariol';
+    src: local('Bariol Bold'), local('Bariol-Bold'),
+        url(../fonts/Bariol-Bold.woff2) format('woff2'),
+        url(../fonts/Bariol-Bold.woff) format('woff'),
+        url(../fonts/Bariol-Bold.ttf) format('truetype'),
+        url(../fonts/Bariol-Bold.svg#Bariol-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #545454;
+    font-size: 1em;
+}
+
+.bariol {
+    font-family: 'Bariol';
+    font-weight: bold;
+    font-style: normal;
+}
+/* <-- Fonte - Família de letras */
+
+/* Cores --> */
+.laranja {
+    color: #FBBB2F;   
+}
+.bk-laranja {
+    background-color: #FBBB2F;   
+}
+
+.laranja2 {
+    color: #fce2aa;   
+}
+.bk-laranja2 {
+    background-color: #fce2aa;   
+}
+
+.rosa {
+    color: #F50083;
+}
+.bk-rosa {
+    background-color: #F50083;
+}
+
+.cinza {
+    color: #545454;
+}
+.bk-cinza {
+    background-color: #545454;
+}
+
+.cinza2 {
+    color: #dddddd;
+}
+.bk-cinza2 {
+    background-color: #dddddd;
+}
+
+.branco {
+    color: #FFFFFF;
+}
+.bk-branco {
+    background-color: #FFFFFF;
+}
+/* <-- Cores */
+
+/* --> Textos e caixas */
+.cx-titulo, h1, h2, h3, h4{
+    /* display: inline-block; */
+    font-family: 'Bariol';
+    color: #FBBB2F;
+    padding: 5px;
+    margin: 0px;
+}
+
+.cx-texto{
+    /* display: inline-block; */
+    /* font-size: 14px; */
+    padding: 10px;
+    margin: 0px;
+}
+
+h1{
+    font-size: 5em;
+    color: #F50083;
+}
+
+h2{
+    font-size: 4em;
+    color: #F50083;
+}
+
+h3{
+    font-size: 3em;
+    color: #F50083;
+}
+
+h4{
+    font-size: 2em;
+    color: #F50083;
+}
+
+/* <-- Textos e caixas */
+
+/* --> Form */
+label {
+    font-size: 0.9em;
+    margin: 0px;
+    padding: 3px 13px;
+    color: #F50083;
+}
+
+input {
+    font-size: 1.5em;
+    font-family: 'Bariol';
+    margin: 1px;
+    padding: 3px 10px;
+    background-color: #ffecc3;
+    border-color: #FBBB2F;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    color: #545454;
+    font-family: 'Bariol';
+    display: inline-block;
+}
+
+
+
+::placeholder {
+    color:white;
+}
+
+button {
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F50083;
+    margin: 5px;
+    padding: 5px;
+    min-width: 75px;
+    font-family: 'Bariol';
+    font-weight: bold;
+    font-size: 1em;
+    color: #F50083;
+}
+.bt-ok{
+    background-color: #FBBB2F;
+    border-color:#ffecc3;
+    color: #545454;
+}
+/* <-- Form */

@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+fieldset{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+    font-style: normal;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    width: 20em;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
+
+input.radio{
+    width: auto;
+}
+
+.radio{
+margin-right: 1em;
+}
+
+h1{
+    color: #F50083;
+    font-weight: normal;
+}
+
+
