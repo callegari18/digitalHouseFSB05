@@ -2,7 +2,8 @@
 
 // Herança, Abstração, Polimorfismo, Encapsulamento
 
-
+//Não deixa o PHP iniciar essa classe
+//ela serve somente de base para outras (sozinha não funciona)
 abstract class Cliente
 {
     public $nome;
