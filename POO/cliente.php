@@ -1,26 +1,30 @@
 <?php
-//PSR - PHP Standers
-//CarrinhoDeCompras /studlycaps
-class Cliente
+// PSR - PHP Standars Recomendations - FIG
+
+// CarrinhoDeCompras / studlycaps
+class Cliente 
 {
-    //Atributos
+    // Atributos
     public $nome;
     public $sobrenome;
     public $cpf;
+    public $nomeCompleto;
+
     // construtor é recurso para
     // inicializar seus atributos de 
     // forma direta
-    public function __construct($nome,$sobrenome, $cpf)
+    public function __construct($nome, $sobrenome, $cpf)
     {
         $this->nome = $nome;
         $this->sobrenome = $sobrenome;
         $this->cpf = $cpf;
-        $this->nomeCompleto = "$nome $sobrenme";
+        $this->nomeCompleto = "$nome $sobrenome";
     }
+
     public function salvar()
     {
         $sql = "INSERT INTO clientes (nome, sobrenome, cpf)
-                VALUES('$this->nome','$this->sobrenome','$this->cpf')";
+                VALUES ('$this->nome', '$this->sobrenome', '$this->cpf')";
 
         echo $sql;
     }

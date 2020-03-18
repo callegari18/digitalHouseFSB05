@@ -4,6 +4,8 @@
 // mysqli_query
 // mysqli_execute
 
+// mysql_connect
+
 // executar normalmente o conteúdo
 // Tratativa de erro na conexão
 require 'conexao.php';

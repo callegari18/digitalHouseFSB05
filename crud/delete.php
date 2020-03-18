@@ -25,8 +25,6 @@ $stmt->bindValue(1, $id);
 
 $resultado = $stmt->execute();
 
-var_dump($resultado);
-
 if ($resultado) {
     header('Location: read.php');
     exit;

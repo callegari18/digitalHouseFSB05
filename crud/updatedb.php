@@ -1,4 +1,5 @@
 <?php
+
 require 'conexao.php';
 
 $id = $_POST['id'];
@@ -7,28 +8,29 @@ $sobrenome = $_POST['sobrenome'];
 $cpf = $_POST['cpf'];
 $contato = $_POST['contato'];
 
-$update = 'UPDATE
+$update = 'UPDATE 
             clientes
-            SET
-            nome=:nome,
+           SET 
+            nome=:nome, 
             sobrenome=:sobrenome,
             cpf=:cpf,
-            contato=:contato 
-            WHERE id=:id
-            ';
+            contato=:contato
+           WHERE id=:id
+        ';
 
 $stmt = $con->prepare($update);
 
-$stmt->bindValue(':nome',$nome);
-$stmt->bindValue(':sobrenome',$sobrenome);
-$stmt->bindValue(':cpf',$cpf);
-$stmt->bindValue(':contato',$contato);
-$stmt->bindValue(':id',$id);
+$stmt->bindValue(':nome', $nome);
+$stmt->bindValue(':sobrenome', $sobrenome);
+$stmt->bindValue(':cpf', $cpf);
+$stmt->bindValue(':contato', $contato);
+$stmt->bindValue(':id', $id);
 
 $resultado = $stmt->execute();
 
-    if ($resultado){
-        header('Location: read.php');
-        exit;
-    }
-    echo 'erro ao atualizar dados.';
+if ($resultado) {
+    header('Location: read.php');
+    exit;
+}
+
+echo 'Erro ao alterar cliente';

@@ -1,35 +1,32 @@
 <?php
-
 require 'cliente.php';
 
-echo'<pre>';
-//instancia
-$cliente1 = new cliente('Leonardo','Tumadjian', '333.333.333-22');
+echo '<pre>';
 
+// Instancia
+$cliente1 = new Cliente('Leonardo', 'Tumadjian', '333.333.333-33');
 
 $cliente1->salvar();
-// var_dump($cliente1);
 
-$cliente2 = new cliente('Carlos','Faria','444.444.444-33');
-echo'<br>';
+// $cliente2 =
+$cliente2 = new Cliente('Carlos', 'Faria', '222.222.222-22');
+
+echo '<br>';
+
 $cliente2->salvar();
 
-// var_dump($cliente2);
+// // Atributos são variaveis da classe
+// $cliente1->nome = 'Leonardo';
+// $cliente1->sobrenome = 'Cardoso';
 
+// $cliente2->nome = 'Carlos';
+// $cliente2->sobrenome = 'Faria';
+// acesso ao atributo nome
+// echo $cliente1->nome . ' ' . $cliente1->sobrenome;
 
-//Atributos são variaveis da classe
-//$cliente1->nome = 'Carlos';
-//$cliente1->sobrenome = 'Faria';
+// echo "$cliente1->nome $cliente1->sobrenome";
 
+// echo $cliente2->nomeCompleto;
 
-// $cliente2->nome = 'Leonardo';
-// $cliente2->sobrenome = 'Cardoso';
-
-//acesso ao atributo 
-//echo $cliente1->nome.' '.$cliente1->sobrenome;
-//echo "$cliente1->nome $cliente1->sobrenome";
- //echo '<pre>';
- //var_dump ($cliente1, $cliente2); 
-
-
-?>
+// echo '<pre>';
+// var_dump($cliente1, $cliente2);
